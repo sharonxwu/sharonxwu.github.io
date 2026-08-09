@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Linkedin, Mail } from "lucide-react";
+import headshot from '../assets/headshot.jpg'
 
 export function Hero() {
   const greeting = "Hi, I'm Sharon!";
@@ -157,7 +158,7 @@ function HeroImage() {
       <div className="absolute inset-0 bg-primary/10 rounded-[24px] rotate-[-4deg] scale-105 transition-transform duration-500" />
       <div className="absolute inset-0 bg-[#d4a373]/10 rounded-[24px] rotate-[2deg] scale-105 transition-transform duration-500 delay-75" />
       <img
-        src="/headshot.jpg"
+        src={headshot}
         alt="Sharon Wu"
         className="relative z-10 w-full h-auto object-cover rounded-[24px] shadow-xl border-[6px] border-background"
       />
